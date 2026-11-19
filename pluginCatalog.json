@@ -1,9 +1,11 @@
 {
   "schemaVersion": 1,
-  "sourceRepository": "HBAI-Ltd/Toonflow-app",
-  "sourceCommit": "0f6ecd9675e199f763c38fa6f2d638f5c40ef278",
-  "publishedAt": "2026-11-19T08:26:52.788Z",
-  "nextId": 31,
+  "sourceRepository": "vinwang/Toonflow-app",
+  "sourceCommit": "4f71f500ba1056670cf79a5565f14b8acd766c9f",
+  "releaseTag": "plugins20261119090032951",
+  "publishedAt": "2026-11-19T09:00:32.951Z",
+  "previousCatalogSha": "e88929d61ef15faf86d75554850236b003886097",
+  "nextId": 45,
   "plugins": [
     {
       "id": 1,
@@ -15,7 +17,7 @@
       "supplier": "Toonflow",
       "desc": "根据提示词、文本及可选的参考图片或音频生成音频。模型列表来自媒体模型设置，仅显示音频模型。",
       "fileName": "audioGenerationNode.umd.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/audioGenerationNode.umd.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/audioGenerationNode.umd.js"
     },
     {
       "id": 2,
@@ -27,7 +29,55 @@
       "supplier": "Toonflow",
       "desc": "将音频素材放到画布中试听，并提供给支持音频参考的下游节点。",
       "fileName": "audioNode.umd.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/audioNode.umd.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/audioNode.umd.js"
+    },
+    {
+      "id": 31,
+      "type": "node",
+      "identifier": "batchConnect",
+      "name": "批量连线",
+      "state": 1,
+      "version": "1.6.3",
+      "supplier": "",
+      "desc": "TTLflow 本地节点插件：把画布上左右两列节点**批量连起来**，省掉一条一条拉线。",
+      "fileName": "batchConnect.umd.js",
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/batchConnect.umd.js"
+    },
+    {
+      "id": 32,
+      "type": "node",
+      "identifier": "batchDownload",
+      "name": "批量下载",
+      "state": 1,
+      "version": "1.4.0",
+      "supplier": "",
+      "desc": "TTLflow 本地节点插件：把整个画布上所有节点的媒体输出（图片 / 视频 / 音频）网格化列出、勾选、打包下载。",
+      "fileName": "batchDownload.umd.js",
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/batchDownload.umd.js"
+    },
+    {
+      "id": 33,
+      "type": "node",
+      "identifier": "batchRun",
+      "name": "批量执行",
+      "state": 1,
+      "version": "1.2.3",
+      "supplier": "",
+      "desc": "TTLflow 本地节点插件：把画布上的生成节点（文本 / 图片 / 视频 / 音频）**按连线分层自动跑一遍**——同一层的节点同时开跑，全部出结果才进下一层。可以框选后只跑选中的那一段。",
+      "fileName": "batchRun.umd.js",
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/batchRun.umd.js"
+    },
+    {
+      "id": 34,
+      "type": "node",
+      "identifier": "characterStylingNode",
+      "name": "换装捏人",
+      "state": 1,
+      "version": "1.7.1",
+      "supplier": "",
+      "desc": "在节点内选择人像、服装和姿势，按当前参考图自动生成合成提示词，调用 TTLflow 已配置的图片模型输出可继续连线的融合结果。",
+      "fileName": "characterStylingNode.umd.js",
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/characterStylingNode.umd.js"
     },
     {
       "id": 3,
@@ -39,7 +89,7 @@
       "supplier": "Toonflow",
       "desc": "用文字生成场景、模型动画与运镜，再通过三维取景调整镜头，适合动作和镜头预演。人形角色使用内置低多边形关节人偶，布景与道具可使用基础几何体。",
       "fileName": "director3dNode.umd.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/director3dNode.umd.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/director3dNode.umd.js"
     },
     {
       "id": 4,
@@ -51,7 +101,7 @@
       "supplier": "Toonflow",
       "desc": "在视频节点或视频生成节点的上方点击“逐帧拉片”，创建拉片节点并自动连接当前视频；也可以单独添加拉片节点并选择视频。开始后提取关键帧、分镜视频和原音轨，在画布中生成独立素材节点。可选择开启 AI 辅助拉片，根据填写的分析重点生成逐镜头说明和全片总结。",
       "fileName": "frameAnalysisNode.umd.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/frameAnalysisNode.umd.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/frameAnalysisNode.umd.js"
     },
     {
       "id": 5,
@@ -63,7 +113,7 @@
       "supplier": "Toonflow",
       "desc": "根据提示词生成图片，也可使用已有图片和文本作为参考，制作角色、场景或分镜图。",
       "fileName": "imageGenerationNode.umd.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/imageGenerationNode.umd.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/imageGenerationNode.umd.js"
     },
     {
       "id": 6,
@@ -75,7 +125,7 @@
       "supplier": "Toonflow",
       "desc": "在画布中展示图片，可作为角色、场景、道具或分镜参考。",
       "fileName": "imageNode.umd.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/imageNode.umd.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/imageNode.umd.js"
     },
     {
       "id": 7,
@@ -87,7 +137,7 @@
       "supplier": "Toonflow",
       "desc": "使用 Markdown 编写、保存和生成正文，可用于剧本、分镜说明或素材分析。",
       "fileName": "textNode.umd.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/textNode.umd.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/textNode.umd.js"
     },
     {
       "id": 8,
@@ -95,11 +145,11 @@
       "identifier": "trumanMap",
       "name": "白模预演TrumanMap",
       "state": 1,
-      "version": "0.16.47",
+      "version": "0.16.48",
       "supplier": "Toonflow",
       "desc": "在画布中搭建三维白模场景：用 AI、整套影视景或素材库布景，安排人物走位与对白，自动分镜运镜，并导出预演小样、镜头表和分镜图，适合拍摄前的白模预演。",
       "fileName": "trumanMap.umd.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/trumanMap.umd.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/trumanMap.umd.js"
     },
     {
       "id": 9,
@@ -107,11 +157,11 @@
       "identifier": "videoGenerationNode",
       "name": "视频生成",
       "state": 1,
-      "version": "2.0.0",
+      "version": "2.1.1",
       "supplier": "Toonflow",
       "desc": "根据提示词和参考素材生成视频，支持所选模型提供的文生视频、单图、首尾帧或混合参考模式。",
       "fileName": "videoGenerationNode.umd.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/videoGenerationNode.umd.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/videoGenerationNode.umd.js"
     },
     {
       "id": 10,
@@ -119,11 +169,35 @@
       "identifier": "videoNode",
       "name": "视频",
       "state": 1,
-      "version": "2.0.0",
+      "version": "2.0.1",
       "supplier": "Toonflow",
       "desc": "导入、播放视频素材，并将视频或截取的画面用于后续制作。",
       "fileName": "videoNode.umd.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/videoNode.umd.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/videoNode.umd.js"
+    },
+    {
+      "id": 35,
+      "type": "node",
+      "identifier": "webEpisodeEditorProNode",
+      "name": "剪辑台Pro",
+      "state": 1,
+      "version": "0.2.87",
+      "supplier": "Dipper",
+      "desc": "独立于当前“剪辑台”的专业剪辑台节点，用于逐步承接更完整的 Web 剪辑体验。",
+      "fileName": "webEpisodeEditorProNode.umd.js",
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/webEpisodeEditorProNode.umd.js"
+    },
+    {
+      "id": 36,
+      "type": "tool",
+      "identifier": "aliOss",
+      "name": "阿里云 OSS",
+      "state": 1,
+      "version": "1.0.0",
+      "supplier": "Vin",
+      "desc": "将工作区媒体上传至阿里云 OSS 私有存储，提供临时 HTTPS 下载地址。",
+      "fileName": "aliOss.tool.js",
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/aliOss.tool.js"
     },
     {
       "id": 11,
@@ -135,7 +209,7 @@
       "supplier": "Toonflow",
       "desc": "一次向用户提出一个或多个问题，支持回答或跳过本次提问。",
       "fileName": "askUser.tool.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/askUser.tool.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/askUser.tool.js"
     },
     {
       "id": 12,
@@ -147,7 +221,7 @@
       "supplier": "Toonflow",
       "desc": "查询、读取和维护全局素材库，将素材导入工作区或将生成结果归档入库。",
       "fileName": "assetOperator.tool.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/assetOperator.tool.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/assetOperator.tool.js"
     },
     {
       "id": 13,
@@ -159,7 +233,7 @@
       "supplier": "Toonflow",
       "desc": "在本机独立浏览器中搜索、浏览和操作网页，并查看浏览器画面。",
       "fileName": "browser.tool.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/browser.tool.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/browser.tool.js"
     },
     {
       "id": 14,
@@ -171,7 +245,19 @@
       "supplier": "Toonflow",
       "desc": "新增、切换、重命名和自动整理画布，操作节点、连线和视口，并调用节点注册的函数。",
       "fileName": "canvas.tool.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/canvas.tool.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/canvas.tool.js"
+    },
+    {
+      "id": 37,
+      "type": "tool",
+      "identifier": "directorLens",
+      "name": "导演之眼 · 提示词润色",
+      "state": 1,
+      "version": "1.2.0",
+      "supplier": "aiwoqv",
+      "desc": "把一句情景描述扩写成带镜头语言、光影方案与电影质感的专业提示词，支持多镜头分镜，输出中英双语、逐镜提示词、预估时长、短视频快投版和负面提示词。",
+      "fileName": "directorLens.tool.js",
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/directorLens.tool.js"
     },
     {
       "id": 15,
@@ -183,7 +269,7 @@
       "supplier": "Toonflow",
       "desc": "使用本机 FFmpeg 处理工作区音视频、图片，并通过 FFprobe 查询媒体信息。",
       "fileName": "ffmpeg.tool.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/ffmpeg.tool.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/ffmpeg.tool.js"
     },
     {
       "id": 16,
@@ -195,7 +281,19 @@
       "supplier": "Toonflow",
       "desc": "在当前工作区编写、构建、安装节点或工具插件，也可为新插件准备市场上传。",
       "fileName": "pluginDeveloper.tool.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/pluginDeveloper.tool.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/pluginDeveloper.tool.js"
+    },
+    {
+      "id": 38,
+      "type": "tool",
+      "identifier": "reaVideo",
+      "name": "视频拆解",
+      "state": 1,
+      "version": "0.1.0",
+      "supplier": "Toonflow",
+      "desc": "拆解与复核工作区视频，按逐镜、连续分组或整片报价生成，恢复任务并合成对照、保存验收。",
+      "fileName": "reaVideo.tool.js",
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/reaVideo.tool.js"
     },
     {
       "id": 17,
@@ -207,7 +305,19 @@
       "supplier": "Toonflow",
       "desc": "在独立内存文件系统中执行 Bash、JavaScript 和 Python，并按需保存输出文件。",
       "fileName": "sandbox.tool.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/sandbox.tool.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/sandbox.tool.js"
+    },
+    {
+      "id": 39,
+      "type": "tool",
+      "identifier": "seedanceAssets",
+      "name": "官方肖像素材库",
+      "state": 1,
+      "version": "1.1.0",
+      "supplier": "Vin",
+      "desc": "使用火山方舟私域真人人像素材库完成认证、入库、查询与画布引用。",
+      "fileName": "seedanceAssets.tool.js",
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/seedanceAssets.tool.js"
     },
     {
       "id": 18,
@@ -219,7 +329,19 @@
       "supplier": "Toonflow",
       "desc": "统一列出、读取、新建和修改工作区及全局技能。",
       "fileName": "skillOperator.tool.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/skillOperator.tool.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/skillOperator.tool.js"
+    },
+    {
+      "id": 40,
+      "type": "tool",
+      "identifier": "toonflowVideoUpscale",
+      "name": "视频升清",
+      "state": 1,
+      "version": "1.1.0",
+      "supplier": "Vin",
+      "desc": "将工作区视频通过 reAPI 增强至 720p、1080p 或 4K，并保留原视频。",
+      "fileName": "toonflowVideoUpscale.tool.js",
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/toonflowVideoUpscale.tool.js"
     },
     {
       "id": 19,
@@ -231,7 +353,31 @@
       "supplier": "Toonflow",
       "desc": "让 AI 按描述制作和修改白模预演场景里的三维模型。",
       "fileName": "trumanMap.tool.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/trumanMap.tool.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/trumanMap.tool.js"
+    },
+    {
+      "id": 41,
+      "type": "tool",
+      "identifier": "videoComposer",
+      "name": "本地成片",
+      "state": 1,
+      "version": "4.5.1",
+      "supplier": "Dipper",
+      "desc": "使用底座 ffmpeg 将工作区视频片段裁剪、拼接、混音并导出 mp4；支持顺序拼接、批量合成和剪辑台Pro时间线合成，不下载 ffmpeg。",
+      "fileName": "videoComposer.tool.js",
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/videoComposer.tool.js"
+    },
+    {
+      "id": 42,
+      "type": "tool",
+      "identifier": "videoUpscale",
+      "name": "视频升清",
+      "state": 1,
+      "version": "1.1.0",
+      "supplier": "Vin",
+      "desc": "将工作区视频通过 reAPI 增强至 720p、1080p 或 4K，并保留原视频。",
+      "fileName": "videoUpscale.tool.js",
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/videoUpscale.tool.js"
     },
     {
       "id": 20,
@@ -243,7 +389,7 @@
       "supplier": "Toonflow",
       "desc": "读取公开网页、文本和 JSON，自动提取静态正文。",
       "fileName": "webFetch.tool.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/webFetch.tool.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/webFetch.tool.js"
     },
     {
       "id": 21,
@@ -255,7 +401,19 @@
       "supplier": "Toonflow",
       "desc": "默认免密钥搜索网页，可切换 DeepSeek 或 Tavily，返回标题、链接和摘要。",
       "fileName": "webSearch.tool.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/webSearch.tool.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/webSearch.tool.js"
+    },
+    {
+      "id": 43,
+      "type": "tool",
+      "identifier": "workbuddyConnect",
+      "name": "WorkBuddy 连接",
+      "state": 1,
+      "version": "2.1.5",
+      "supplier": "localWorkspace",
+      "desc": "单文件自带代理：自动读取本机 WorkBuddy 桌面端凭据，起一个本地 OpenAI 兼容服务（对话模型 + 生图 + 生视频 + 积分 + 模型目录）。装完调用 workbuddySetup 即可把文本模型写进 TTLflow 供应商。",
+      "fileName": "workbuddyConnect.tool.js",
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/workbuddyConnect.tool.js"
     },
     {
       "id": 22,
@@ -267,7 +425,7 @@
       "supplier": "Toonflow",
       "desc": "读取、列出和编辑当前工作区内的文件，搜索文件内容、查找文件，下载远程图片到工作区。",
       "fileName": "workspace.tool.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/workspace.tool.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/workspace.tool.js"
     },
     {
       "id": 23,
@@ -279,7 +437,7 @@
       "supplier": "Toonflow",
       "desc": "在文档标签页中显示原画布节点的上槽位、内容和下槽位，复用节点运行实例与生成状态。",
       "fileName": "canvasNode.ext.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/canvasNode.ext.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/canvasNode.ext.js"
     },
     {
       "id": 24,
@@ -291,7 +449,7 @@
       "supplier": "Toonflow",
       "desc": "支持 JPG、JPEG、PNG、WebP、GIF、BMP、SVG、AVIF 和 ICO。通过宿主共享文件 URL 读取资源，在切换或关闭标签时释放 URL。",
       "fileName": "image.ext.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/image.ext.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/image.ext.js"
     },
     {
       "id": 25,
@@ -303,7 +461,7 @@
       "supplier": "Toonflow",
       "desc": "支持 `.md`、`.markdown` 文件，扩展标识为 `ext-md`。",
       "fileName": "md.ext.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/md.ext.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/md.ext.js"
     },
     {
       "id": 26,
@@ -315,7 +473,7 @@
       "supplier": "Toonflow",
       "desc": "在文档页打开 MP4、MP3、WAV、PCM 和 Opus，后缀不区分大小写。提供播放、暂停、进度和音量控件，视频支持全屏；隐藏标签时暂停播放。",
       "fileName": "media.ext.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/media.ext.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/media.ext.js"
     },
     {
       "id": 27,
@@ -327,7 +485,7 @@
       "supplier": "Toonflow",
       "desc": "提供纯文本文件编辑，文件读取、保存队列和关闭前保存由文档宿主管理。组件通过 `context.text` 接收文本，通过 `context.updateText(text)` 提交修改。",
       "fileName": "txt.ext.js",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/txt.ext.js"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/txt.ext.js"
     },
     {
       "id": 28,
@@ -335,11 +493,23 @@
       "identifier": "canvas",
       "name": "画布操作手册",
       "state": 1,
-      "version": "2.1.0",
+      "version": "2.2.0",
       "supplier": "Toonflow",
-      "desc": "Toonflow 画布操作手册。使用画布工具创建、切换和重命名画布，添加、移动、重命名、连接和删除节点，自动整理整幅画布、调整视口，以及调用节点注册的函数。用户要求操作当前画布或搭建节点流程时使用。",
+      "desc": "TTLflow 画布操作手册。使用画布工具管理画布和节点、连接素材及调用节点函数，支持基于已有视频的编辑与延长。用户要求操作当前画布或搭建节点流程时使用。",
       "fileName": "canvas.tar.gz",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/canvas.tar.gz"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/canvas.tar.gz"
+    },
+    {
+      "id": 44,
+      "type": "skill",
+      "identifier": "reaVideo",
+      "name": "视频拆解手册",
+      "state": 1,
+      "version": "1.2.0",
+      "supplier": "Toonflow",
+      "desc": "逆向拆解一条视频是怎么做出来的——逐镜头判断实拍 / 影视片段 / AI 生成 / 3D 渲染 / 2D 动画 / 定格动画 / 代码模板渲染 / 录屏截图 / 静态图推拉 / 静帧，以及实拍是否经过 AI 加工（换脸、对口型、风格化），标出后期叠加层（逐句字幕时间轴、花字、标题、贴纸 / GIF / 表情包、画中画）和用户真实素材，拆解人声、背景音乐、音效（卡在哪个画面事件上）与剪辑节奏，并给出复刻方案。当用户给出参考视频、问\"这条视频怎么做的 / 是不是 AI / 用了什么素材 / 怎么复刻\"时使用。",
+      "fileName": "reaVideo.tar.gz",
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/reaVideo.tar.gz"
     },
     {
       "id": 29,
@@ -349,9 +519,9 @@
       "state": 1,
       "version": "1.1.0",
       "supplier": "Toonflow",
-      "desc": "融合 Toonflow v1.1.8 的编剧方法、12 类叙事技法、11 种美术风格及资产、分镜、图像和视频提示词知识，将小说或剧本逐阶段制作并确认。统一维护剧本画布、资产画布和每集制作画布；用于旧版流程复现、分集制作或续作，讨论或编辑技能本身时不启动制作。",
+      "desc": "融合旧版 v1.1.8 的编剧方法、12 类叙事技法、11 种美术风格及资产、分镜、图像和视频提示词知识，将小说或剧本逐阶段制作并确认。统一维护剧本画布、资产画布和每集制作画布；用于旧版流程复现、分集制作或续作，讨论或编辑技能本身时不启动制作。",
       "fileName": "v118workflow.tar.gz",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/v118workflow.tar.gz"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/v118workflow.tar.gz"
     },
     {
       "id": 30,
@@ -359,11 +529,11 @@
       "identifier": "workflow",
       "name": "视频制作工作流",
       "state": 1,
-      "version": "2.7.0",
+      "version": "2.8.0",
       "supplier": "Toonflow",
-      "desc": "在 Toonflow 当前画布中把创意、小说或定稿剧本制作成可查看的文本、图片资产和视频片段，支持复用素材、续作与局部修改。用于实际制作或继续已有项目；明确只要对话文字时不操作画布，讨论或编辑技能本身时不启动制作。",
+      "desc": "在 TTLflow 当前画布中制作视频，或基于已有视频进行编辑和延长，支持复用素材、续作与局部修改。用于实际制作或继续已有项目；明确只要对话文字时不操作画布，讨论或编辑技能本身时不启动制作。",
       "fileName": "workflow.tar.gz",
-      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119082652788/workflow.tar.gz"
+      "link": "https://github.com/vinwang/TTLflow-releases/releases/download/plugins20261119090032951/workflow.tar.gz"
     }
   ]
 }
